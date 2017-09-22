@@ -5,8 +5,8 @@ import image from "./shelfie.png";
 import { Link } from "react-router-dom";
 
 export default class Home extends Component {
-    constructor() {
-        super();
+    constructor(params) {
+        super(params);
 
         this.state = {
             shelf: "",
@@ -32,35 +32,35 @@ export default class Home extends Component {
                 </div>{/* end of home header */}
                 <div className="mainContentHolder">
                     <div className="mainContent">
-                        <Link to="/shelf/a"><div className="shelfDiv">
+                        <Link to="/shelf/A"><div className="shelfDiv">
                             <h2>Shelf A</h2>
                             {
                                 this.setState({
-                                shelf: "a"
+                                shelf: "A"
                                 })
                             }
                         </div></Link>
-                        <Link to="/shelf/b"><div className="shelfDiv">
+                        <Link to="/shelf/B"><div className="shelfDiv">
                             <h2>Shelf B</h2>
                             {
                                 this.setState({
-                                    shelf: "b"
+                                    shelf: "B"
                                 })
                             }
                         </div></Link>
-                        <Link to="shelf/c"><div className="shelfDiv">
+                        <Link to="shelf/C"><div className="shelfDiv">
                             <h2>Shelf C</h2>
                             {
                                 this.setState({
-                                    shelf: "c"
+                                    shelf: "C"
                                 })
                             }
                         </div></Link>
-                        <Link to="shelf/d"><div className="shelfDiv">
+                        <Link to="shelf/D"><div className="shelfDiv">
                             <h2>Shelf D</h2>
                             {
                                 this.setState({
-                                    shelf: "d"
+                                    shelf: "D"
                                 })
                             }
                         </div></Link>

@@ -8,14 +8,16 @@ export default class Shelf extends Component {
     ComponentDidMount() {
 
     }
+
     render() {
+
         return (
             <div>
                 <div className="homeHeader">
                     <Link to="/"><img className="logo shelfLogo" src={image} alt="logo" /></Link>
                     <div className="headerContent shelfHeader">
 
-                        <h1>Shelf {this.props.shelf}</h1>
+                        <h1>Shelf {this.props.match.params.shelfid}</h1>
 
                     </div>{/* end of header content */}
                 </div>{/* end of home header */}
