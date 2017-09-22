@@ -14,9 +14,9 @@ class App extends Component {
     }
   }
 
-  ComponentDidMount() {
+  // ComponentDidMount() {
     
-  }
+  // }
 
 
   render() {
