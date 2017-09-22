@@ -1,2 +1,2 @@
 select * from Shelfie
-where binid = $2;
+where binid = $1;

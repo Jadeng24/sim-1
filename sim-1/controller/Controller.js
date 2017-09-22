@@ -3,30 +3,31 @@ module.exports = {
         let db = req.app.get('db');
         
     },
-    deletBin: (req, res, next) => {
+    deleteBin: (req, res, next) => {
         let db = req.app.get('db');
         const { params } = req;
 
-        db.deletBin([parmas.id])
-        .then( () => res.status(200).send())
+        db.deleteBin([params.id])
+        .then( bin => res.status(200).send(bin))
     },
     getAllBins: (req, res, next) => {
         let db = req.app.get('db');
+        const { params } = req;
 
-        db.getAllBins().then(bins => res.status(200).send(bins));
+        db.getAllBins([params.id]).then(bins => res.status(200).send(bins));
     },
     getBin: (req, res, next) => {
         let db = req.app.get('db');
         const { params } = req;
 
-        db.getBin([parmas.id])
-        .then( () => res.status(200).send())
+        db.getBin([params.id])
+        .then( bin => res.status(200).send(bin))
     },
     updateBin: (req, res, next) => {
         let db = req.app.get('db');
-        const { params, queary}= req;
+        const { params, query}= req;
         
-        updateBin.update_product([params.id, query.name, query.price])
+        db.updateBin([params.id, query.name, query.price])
         .then( () => res.status(200).send() )
     }
 }

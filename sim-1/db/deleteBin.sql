@@ -1,2 +1,3 @@
-delete from Shelfie
-where binid = $1;
+update  Shelfie 
+set name = null, price = null
+where binid = $1
