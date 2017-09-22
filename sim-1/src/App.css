@@ -1,3 +1,64 @@
 .App {
   text-align: center;
 }
+
+
+
+
+.homeHeader {
+  background: #AB2A19;
+  color: white;
+  height: 125px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.homeHeader h1 {
+  font-size: 30pt;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  margin-left: 10px;
+  padding-top: 35px;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  padding-top: 25px;
+}
+.headerContent {
+  height: 125px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainContentHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 500px;
+}
+.mainContent a {
+  text-decoration: none;
+}
+.shelfDiv {
+  background: #D34735;
+  height: 75px;
+  color: white;
+  border-radius: 5px;
+}
+.shelfDiv h2 {
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 120px;
+  font-size: 30pt;
+}
+.shelfHeader{
+  background: #D34735;
+}
